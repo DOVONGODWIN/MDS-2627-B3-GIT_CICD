@@ -26,6 +26,12 @@
 - `git status` : Permet de voir l'état de la branche actuelle du repository local.
 - `git log` : Permet de voir l'historique des commits.
 - `git reset --hard` : Permet de supprimer toutes les modifications non commitées.
+- `git branch` : Permet de lister les branches du repository local et de voir quelle est la branche active.
+- `git branch <nom>` : Permet de créer une branche nommée sur le repository local.
+- `git branch -d <nom>` : Permet de supprimer une branche sur un repository local.
+- `git push origin --delete` : Permet de propager à distance le suppression de branches en local.
+- `git checkout <nom>` : Permet de rendre la branche `<nom>` active (= changer de branche 🙈).
+- `git merge <nom>` : Permet de fusionner la branche `<nom>` avec la branche active.
 
 ## Les conflits
 
@@ -48,3 +54,16 @@ Pour identifier un conflit dans un fichier, 3 parties :
 1. L'organisation permet largement d'éviter les conflits ou à minima de les limiter.
 2. Penser à `git pull` avant de `git push` permet d'éviter d'en avoir.
 3. C'est normal d'en rencontrer, même avec les meilleures pratiques.
+
+
+
+
+---------------------------------------------
+
+
+1. créer un repo
+2. faire un truc sur la main
+3. créer une branche toto et faire des trucs dessus
+4. créer une branche tata et faire des trucs dessus
+5. merge la branche tata sur la main
+6. merge la branche toto sur la main
