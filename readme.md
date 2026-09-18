@@ -23,6 +23,11 @@
 - `git commit -m "<message>"` : Permet de sauvegarder un état d'indexation. Permet également de décrire le commit grâce au message qui est **obligatoire**. Ils sont datés.
 - `git push` : Permet d'envoyer les commits du repository local sur le repository distant. Lors du premier push sur une branche, il faudra utiliser la commande `git push -u origin <branch>`. Si vous l'oubliez, GIT vous le rapellera.
 - `git pull` : Permet de récupérer les commits du repository distant sur le repository local.
+- `git status` : Permet de voir l'état de la branche actuelle du repository local.
+- `git log` : Permet de voir l'historique des commits.
+- `git reset --hard` : Permet de supprimer toutes les modifications non commitées.
+
+
 
 ## Les conflits
 
