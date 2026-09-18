@@ -23,3 +23,25 @@
 - `git commit -m "<message>"` : Permet de sauvegarder un état d'indexation. Permet également de décrire le commit grâce au message qui est **obligatoire**. Ils sont datés.
 - `git push` : Permet d'envoyer les commits du repository local sur le repository distant. Lors du premier push sur une branche, il faudra utiliser la commande `git push -u origin <branch>`. Si vous l'oubliez, GIT vous le rapellera.
 - `git pull` : Permet de récupérer les commits du repository distant sur le repository local.
+
+## Les conflits
+
+### Comment les gérer ?
+
+Ils peuvent concerner 1 ou plusieurs fichiers
+
+Lorsqu'ils apparaissent, plusieurs options sont possibles :
+1. Garder l'ancienne version du fichier et supprimer la nouvelle.
+2. Garder la nouvelle version du fichier et supprimer l'ancienne.
+3. Garder les deux versions.
+
+Pour identifier un conflit dans un fichier, 3 parties :
+- Le début est symbolisé par une série de caractères `<<<<<<<<<<<`
+- La fin est symbolisé par une série de caractères `>>>>>>>>> <id_commit>`
+- Pour délimiter le code "avant" du code "après", GIT insère une série de caractères `=======`
+
+### Astuces pour les éviter ?
+
+1. L'organisation permet largement d'éviter les conflits ou à minima de les limiter.
+2. Penser à `git pull` avant de `git push` permet d'éviter d'en avoir.
+3. C'est normal d'en rencontrer, même avec les meilleures pratiques.
