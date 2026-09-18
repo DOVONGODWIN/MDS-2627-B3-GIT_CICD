@@ -12,6 +12,12 @@
 - `Repository` : C'est un dossier qui "utilise" GIT : il dispose d'un sous-dossier caché ".git". Ils peuvent être distants ou locaux.
 - `Repository local` : C'est le repository qui est sur une machine à laquelle vous avez généralement accès.
 - `Repository distant` : C'est le repository qui est **hébergé et géré** par une plateforme spécialisée (Github, Gitlab, Gitea, etc...). Ils peuvent être publics (accessibles à tous) ou privés (accessibles uniquement à ceux qu'on souhaite).
+- `Les branches` : Permettent de gérer plusieurs versions d'un même projet.
+- `conflit` : C'est l'événement qui se déclenche lorsque l'intégrité du travail n'est plus assurée.
+- `Fork` : C'est un repository distant propriétaire qui est une copie d'un autre repository distant non propriétaire.
+- `Pull Request` : Propose de fusionner un fork vers le repository original.
+- `Tag` : Étiquette permettant d'indiquer une version importante et stable.
+
 
 ## Commandes
 
@@ -32,6 +38,11 @@
 - `git push origin --delete` : Permet de propager à distance le suppression de branches en local.
 - `git checkout <nom>` : Permet de rendre la branche `<nom>` active (= changer de branche 🙈).
 - `git merge <nom>` : Permet de fusionner la branche `<nom>` avec la branche active.
+- `git rebase <branch>` : Permet de mettre à jour la branche courante à partir de la branche `<branch>`
+- `git tag -a v1.0.0 -m "message de description"` : Permet de créer un tag sur le dernier commit, en spécifiant une version `v1.0.0` et avec un message de description.
+- `git push origin v1.0.0` : Permet de pousser un tag spécifique sur le repository distant.
+- `git push origin --tags` : Permet de pousser tous les tags sur le repository distant.
+
 
 ## Les conflits
 
@@ -57,13 +68,3 @@ Pour identifier un conflit dans un fichier, 3 parties :
 
 
 
-
----------------------------------------------
-
-
-1. créer un repo
-2. faire un truc sur la main
-3. créer une branche toto et faire des trucs dessus
-4. créer une branche tata et faire des trucs dessus
-5. merge la branche tata sur la main
-6. merge la branche toto sur la main
