@@ -27,8 +27,6 @@
 - `git log` : Permet de voir l'historique des commits.
 - `git reset --hard` : Permet de supprimer toutes les modifications non commitées.
 
-
-
 ## Les conflits
 
 ### Comment les gérer ?
