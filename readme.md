@@ -68,3 +68,12 @@ Pour identifier un conflit dans un fichier, 3 parties :
 
 
 
+----------------------------
+
+
+1. faire un fork de mon repo
+2. cloner en local sur vos machines
+3. ajouter un fichier "nom_prenom.md" avec le nom de votre film préféré dedans
+4. poussez sur votre repo distant forké
+5. créez une PR (Pull Request) pour me proposer d'ajouter vos modifications au repo global
+6. quand tout le monde aura validé sa PR, alors vous pourrez mettre à jour le fork via l'interface github pour bénéficier de toutes les nouveautés.
